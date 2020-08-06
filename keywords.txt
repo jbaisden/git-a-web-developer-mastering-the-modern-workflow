@@ -1,0 +1,29 @@
+git init - creates new repository
+
+git clone <github url> - clones repo & all files 
+
+project - source repository
+
+working directory - location where project lives
+
+staging - prepares chosen files for committing
+    git add -A (stages all files for committing) 
+
+commit - git's way of saving files
+    git commit -m 'commit message here'
+
+push - sends code from local repository to remote repository
+
+git push origin master
+
+pull - gets latest changes from remote repository
+
+git pull origin master
+
+
+git checkout -- . ?? //restores files in directory with last commit
+
+GIT CONFIGURATION
+git config --global user.name "jason"
+git config --global user.email "jasonbaisden@gmail.com"
+
