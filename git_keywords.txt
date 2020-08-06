@@ -27,3 +27,6 @@ GIT CONFIGURATION
 git config --global user.name "jason"
 git config --global user.email "jasonbaisden@gmail.com"
 
+git remote -v //shows current remote git urls for fetch/push
+git remove set-url origin <git url> //sets remote url for origin
+git push origin master //pushes local origin ?? to master branch

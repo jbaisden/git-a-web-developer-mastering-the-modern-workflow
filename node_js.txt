@@ -1,0 +1,3 @@
+What is Node.js - a javascript runtime that lets you do almost anything with javascript.
+Think Powershell like tasks.
+
