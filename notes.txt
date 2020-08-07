@@ -5,3 +5,9 @@ PostCss - css processor
 
 npm packages - css-loader, style-loader - these allow webpack to understand css files (natively it only supports js files)
 
+B.E.M. - css selectors should target elements directly with classes instead of type selectors
+    B - Block - independent reusable part of our design
+    E - element belongs to a block & is dependent on the block.
+    M - modifier can be used on a block or an element to indicate a change to state ex. --is-open might have a 
+    style that opens a hamburger menu.
+
