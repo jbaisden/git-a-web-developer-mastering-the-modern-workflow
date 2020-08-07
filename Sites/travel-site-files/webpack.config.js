@@ -1,6 +1,7 @@
 const path = require('path');  //node package for getting full directory path in an OS agnostic manner
 
 const postCssPlugins = [
+    require('postcss-import'),
     require('postcss-simple-vars'),
     require('postcss-nested'),
     require('autoprefixer')

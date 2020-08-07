@@ -1,0 +1,21 @@
+.large-hero {
+    position: relative;
+}
+
+.large_hero__text-content {
+    position: absolute;
+    /* vertically aligns element */
+    top: 50%; 
+    /* 
+        Allows us to position an element veritically relative to itself.  This is our way of horizontally aligning the element. 
+
+        This is a bit counter intuitive because you'd think a negative value would push the content down and a positive value would push
+        the content up. Apparently, it's the opposite. No idea why. The % refers to the total height of the content. So assume
+        the content is 90px tall. We're saying push the content up by 45px (see -50%).
+    */
+    transform: translateY(-50%); 
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+}
