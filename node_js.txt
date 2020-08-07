@@ -1,3 +1,9 @@
 What is Node.js - a javascript runtime that lets you do almost anything with javascript.
 Think Powershell like tasks.
 
+// **************** unable to get local issuer certificate
+npm config set strict-ssl false   // THIS IS REALLY BAD & UNSECURE
+git config --global http.sslVerify false  // THIS IS REALLY BAD & UNSECURE
+
+
+* NPM offers packages for doing things with Node JS as well as other things (bootstrap, axios, css, etc)
