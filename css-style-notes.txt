@@ -8,4 +8,18 @@
         the content up. Apparently, it's the opposite. No idea why.
     */
     transform: translateY(-50%); 
-    
+
+    rem - a unit of measurement that scales according to the user's default html font size. So if 
+    the root font size of the html element is 15px and we 1.5rem, we're saying size = 1.5 * 15.
+
+    It's fairly safe to assume 1rem = 16px when performing calculations to go from pixels to rem.
+
+    From Q & A, lesson 19:
+
+    For &__description, to center the text we use margin-right, margin-left auto? 
+    why with text-align:center; it doesn't work. Sorry for asking this
+
+    The margin-left: auto and margin-right: auto center the box containing the text, 
+    while the text-align: center center the text inside the box. <p> or the paragraph 
+    element is a block level element (the box) and the content it contains is 
+    inline (the text inside the box).
