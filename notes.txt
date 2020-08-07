@@ -1,0 +1,7 @@
+Autoprefixer - tool that changes css styles to the various -webkit-, -moz- prefixes so they don't all have to be typed out.
+
+PostCss - css processor
+
+
+npm packages - css-loader, style-loader - these allow webpack to understand css files (natively it only supports js files)
+
