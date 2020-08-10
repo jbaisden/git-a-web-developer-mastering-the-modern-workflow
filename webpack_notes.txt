@@ -12,3 +12,7 @@ module.exports = {
     }, 
     mode: 'development',                      // this gets rid of the warning message
     watch: true                               // this tells webpack to watch the app.js file for changes
+
+
+Hot reload is done through the npm package webpack-dev-server
+See webpack.config.js & App.js comments

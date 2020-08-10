@@ -5,5 +5,5 @@ Think Powershell like tasks.
 npm config set strict-ssl false   // THIS IS REALLY BAD & UNSECURE
 git config --global http.sslVerify false  // THIS IS REALLY BAD & UNSECURE
 
-
+ 
 * NPM offers packages for doing things with Node JS as well as other things (bootstrap, axios, css, etc)

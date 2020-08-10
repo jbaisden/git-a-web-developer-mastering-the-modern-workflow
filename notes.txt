@@ -5,12 +5,7 @@ PostCss - css processor
 
 npm packages - css-loader, style-loader - these allow webpack to understand css files (natively it only supports js files)
 
-See https://www.smashingmagazine.com/2018/06/bem-for-beginners/
-B.E.M. - css selectors should target elements directly with classes instead of type selectors
-    B - Block - independent reusable part of our design
-    E - element belongs to a block & is dependent on the block.
-    M - modifier can be used on a block or an element to indicate a change to state ex. --is-open might have a 
-    style that opens a hamburger menu.
+
 
 I am not sure if this is mentioned elsewhere, but a trick mentioned in another course to simplify rem calculations is to set
 
@@ -20,3 +15,7 @@ font-size:62.5%;
 
 in the base/global file. This will allow all of your rem calculations to be based on 10 instead of 16, e.g. the design 
 file gives you a 32px headline which translates to 3.2rem. It is much quicker to just move the decimal one space.
+
+After changes made in lesson 20, you can view the site from a device on the wifi network
+by going to the ip address of the machine running the dev server and port:3000. The page and styles 
+will update in real time.

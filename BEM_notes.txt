@@ -1,0 +1,12 @@
+See https://www.smashingmagazine.com/2018/06/bem-for-beginners/
+B.E.M. - css selectors should target elements directly with classes instead of type selectors
+    B - Block - independent reusable part of our design
+    E - element belongs to a block & is dependent on the block.
+    M - modifier can be used on a block or an element to indicate a change to state ex. --is-open might have a 
+    style that opens a hamburger menu.
+
+See udemy note for good overview description
+
+benefit is that the relationship between the html and css is crystal clear so even if 
+you have to come back a year later, it'll be easier to modify.
+

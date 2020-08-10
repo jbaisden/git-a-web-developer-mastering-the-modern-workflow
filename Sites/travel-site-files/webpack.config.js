@@ -13,8 +13,17 @@ module.exports = {
         filename: 'bundled.js',
         path: path.resolve(__dirname, 'app')     //this will created a bundled.js file in the 'app' directory
     },
-    mode: 'development',            //this gets rid of the warning message
-    watch: true ,                    //this tells webpack to watch the app.js file for changes
+    devServer: {                       //this configures the hot reload for css & js
+        before: function(app, server) {
+            server._watch('./app/**/*.html')
+        },
+        contentBase: path.join(__dirname, 'app'),
+        hot: true,
+        port: 3000,
+        host: '0.0.0.0'
+    },
+    mode: 'development',            // this gets rid of the warning message
+    //watch: true ,                   // this tells webpack to watch the app.js file for changes
     module: {
         rules: [
             {
