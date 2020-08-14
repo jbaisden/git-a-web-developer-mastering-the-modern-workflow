@@ -19,3 +19,41 @@ file gives you a 32px headline which translates to 3.2rem. It is much quicker to
 After changes made in lesson 20, you can view the site from a device on the wifi network
 by going to the ip address of the machine running the dev server and port:3000. The page and styles 
 will update in real time.
+
+LESSON 21 - MOBILE FIRST 
+
+* Most traffic actually comes from mobile devices
+* Code site such that mobile devices load only the content/data needed for 
+their form factor
+
+see postcss_notes.txt
+
+What is a responsive image and why do we need it?
+
+2 occasions:
+
+1: Art direction & cropping. Sometimes wider cropped images look strange on mobile devices as it
+makes the subject look far away. Generally you want to crop tightly around the subject for mobile
+form factors.
+
+In the case where you have distinct images per form factor, use:
+
+<picture>
+    <source srcset="image_file" media="(min-width: 1200px)" >
+    <source srcset="image_file" media="(min-width: 760px)" >
+    <img src="defaultimage.jpg" alt="img description">
+</picture>
+
+2: Image resolution & filesize
+
+This allows the device/browser to make the choice about which image to load.
+<img srcset="smallimage.jpg 570w, mediumimage.jpg 1200w, largeimage.jpg 1900w">
+
+Example: 
+
+    <picture>
+      <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+      <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+      <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--hi-dpi.jpg 1980w" media="(min-width: 640px)">
+      <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg  1280w" alt="Coastal view of ocean and mountains.">
+    </picture>

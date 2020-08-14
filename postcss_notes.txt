@@ -1,0 +1,43 @@
+See https://www.npmjs.com/package/postcss
+
+This project uses many of the postcss plugins.
+
+Those would be these plugins defined in webpack.config.js:
+
+const postCssPlugins = [
+    require('postcss-import'),
+    require('postcss-mixins'),     //adds mixin support...see app\styles\base\_mixins.css
+    require('postcss-simple-vars'),
+    require('postcss-nested'),
+    require('autoprefixer')
+];
+
+******** POSTCSS-MIXINS ********
+This allows us to eseentially create css snippets and slot them into the styling as needed.
+
+Example: _mixins.css 
+@define-mixin atSmall { 
+    @media (min-width:530px) {
+        @mixin-content;
+    }
+}
+
+Example: styles.css
+@import 'base/_mixins';
+
+Example: _large-hero.css
+
+    &__title {
+     
+        font-weight: 300;
+        color: $mainBlue;
+        margin: 0;
+        font-size: 1.1rem;
+
+        @mixin atSmall {
+            font-size: 2rem;
+        }
+    }
+
+Now we didn't have to specify media query or pixel size.
+
